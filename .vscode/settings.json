@@ -1,0 +1,6 @@
+{
+    "playwright.env": {
+        "timeout": 15000
+    },
+    "playwright.reuseBrowser": true
+}

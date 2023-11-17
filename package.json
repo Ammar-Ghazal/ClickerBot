@@ -1,0 +1,17 @@
+{
+  "name": "clicker-bot-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "clicker.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.5",
+    "nodemailer-promise": "^2.0.0"
+  }
+}
