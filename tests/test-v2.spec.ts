@@ -11,31 +11,30 @@ let pageTimeout = 3000;
 
 // Playwright test loop
 test('fragranceBuyStockCheckerV2', async ({ page }) => {
-    // navigate to wish list:
-    const itemsArray = buildMergedList(stockInfoDirectory);
-    // while(true){
-      for (let i = 0; i < itemsArray.length; i++) {
-        const item = itemsArray[i];
-        console.log(item);
-        if (item.stockStatus == 'Add to Cart') {
-            await notifyByEmail(item.itemName, page);
-            itemsArray.splice(i, 1);
-            i--; // Decrement i to account for the removed item
-        } else if (item.stockStatus == 'Out of stock') {
-            // Do nothing for now
-        } else {
-            notifyByEmail('Checker broken :(', page);
-        }
-      }
+  // navigate to wish list:
+  const itemsArray = buildMergedList(stockInfoDirectory);
+  // while(true){
+  for (let i = 0; i < itemsArray.length; i++) {
+    const item = itemsArray[i];
+    console.log(item);
+    if (item.stockStatus == 'Add to Cart') {
+        await notifyByEmail(item.itemName, page);
+        itemsArray.splice(i, 1);
+        i--; // Decrement i to account for the removed item
+    } else if (item.stockStatus == 'Out of stock') {
+        // Do nothing for now
+    } else {
+        notifyByEmail('Checker broken :(', page);
+    }
+  }
 
-      // Update the text file:
-      writeExternal(itemsArray);
+  // Update the text file:
+  writeExternal(itemsArray);
 
-      // await page.getByRole('cell', { name: 'The Woods Collection Natural Dusk For Man/Woman - The Woods Collection Natural Dusk EDP M 100ml Boxed' }).click();
-      // await page.locator('#registry-variant-40089878134846').getByRole('cell', { name: 'Out of stock' }).click();
-    });
-    // }
+  // await page.getByRole('cell', { name: 'The Woods Collection Natural Dusk For Man/Woman - The Woods Collection Natural Dusk EDP M 100ml Boxed' }).click();
+  // await page.locator('#registry-variant-40089878134846').getByRole('cell', { name: 'Out of stock' }).click();
 });
+
 
 // ************************************************************************
 // *************************** HELPER FUNCTIONS ***************************
