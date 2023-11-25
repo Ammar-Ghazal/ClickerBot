@@ -12,16 +12,19 @@ let pageTimeout = 3000;
 const productURLs = [
   'https://fragrancebuy.ca/products/sapilbound-man',
   'https://fragrancebuy.ca/products/lattafathetux-man',
-  'https://fragrancebuy.ca/products/azzaromostwanted-man',
+  // 'https://fragrancebuy.ca/products/azzaromostwanted-man',
   'https://fragrancebuy.ca/products/armanicodeprofumo-man',
   // 'https://fragrancebuy.ca/products/bvlgarimaninblack-man',
-  'https://fragrancebuy.ca/products/fragranceworldsuits-man',
-  'https://fragrancebuy.ca/products/fragranceworldhardwood-man',
-  'https://fragrancebuy.ca/products/fragranceworldspectreghost-man',
+  'https://fragrancebuy.ca/products/lattafakhamrahqahwa-man',
+  // 'https://fragrancebuy.ca/products/lattafaqaedalfursan-man',
+  // 'https://fragrancebuy.ca/products/fragranceworldspectreghost-man',
   'https://fragrancebuy.ca/products/isseymiyakepulseofthenight-man',
-  'https://fragrancebuy.ca/products/thewoodscollectionnaturaldusk-man',
-  'https://fragrancebuy.ca/products/moresquethesecretcollectionsoulbatik-man',
-  'https://fragrancebuy.ca/products/armafjustjacknoirendurancenoirextremetwist-man',
+  // 'https://fragrancebuy.ca/products/thewoodscollectionnaturaldusk-man',
+  'https://fragrancebuy.ca/products/fragranceworldanaqeedgreenathoor-man',
+  // 'https://fragrancebuy.ca/products/moresquethesecretcollectionsoulbatik-man',
+  // 'https://fragrancebuy.ca/products/fragranceworldmarkviktoreaudespiceextreme-man',
+  // 'https://fragrancebuy.ca/products/armafjustjacknoirendurancenoirextremetwist-man',
+  'https://fragrancebuy.ca/products/fragranceworldmoonlightlailaiqamarluminoustwist-man',
 ];
 
 // Playwright test loop
